@@ -7,16 +7,16 @@ from sklearn.linear_model import LogisticRegression
  
 
 # Load preprocessed features, model, scaler, and columns
-with open("E:/Mid_Project_Data_Science/income/Pages/preprocessed_features.pkl", 'rb') as f:
+with open("./income/Pages/preprocessed_features.pkl", 'rb') as f:
     Features = pickle.load(f)
 
-with open("E:/Mid_Project_Data_Science/income/Pages/logistic_regression_model.pkl", 'rb') as f:
+with open("./income/Pages/logistic_regression_model.pkl", 'rb') as f:
     model = pickle.load(f)
 
-with open("E:/Mid_Project_Data_Science/income/Pages/scaler.pkl", 'rb') as f:
+with open("./income/Pages/scaler.pkl", 'rb') as f:
     scaler = pickle.load(f)
 
-with open("E:/Mid_Project_Data_Science/income/Pages/columns.pkl", 'rb') as f:
+with open("./income/Pages/columns.pkl", 'rb') as f:
     columns = pickle.load(f)
 
 # Function to preprocess input data
